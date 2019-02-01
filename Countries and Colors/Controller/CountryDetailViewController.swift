@@ -15,12 +15,9 @@ class CountryDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let countryName = selectedCountry?.name {
-            self.title = countryName
-        }
-        
-        if let countryColor = selectedCountry?.color {
-            self.view.backgroundColor = countryColor
+        if let country = selectedCountry {
+            self.title = country.name
+            self.view.backgroundColor = country.color
         }
     }
 }
