@@ -10,6 +10,7 @@ import UIKit
 
 class CountriesTableViewController: UITableViewController {
     
+    var selectedCountry: Country?
     var continents: [Continent] = []
 
     override func viewDidLoad() {
@@ -42,8 +43,6 @@ class CountriesTableViewController: UITableViewController {
         cell.textLabel?.text = continentSection.countries[indexPath.row].name
         cell.backgroundColor = continentSection.countries[indexPath.row].color
         
-        print("\(String(describing: cell.textLabel?.text))-\(continentSection.countries[indexPath.row].color)")
-        
         return cell
     }
     
@@ -56,7 +55,14 @@ class CountriesTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //
+        if segue.identifier == "gotoCountryDetail" {
+            if let destination = segue.destination as? CountryDetailViewController,
+                let section = tableView.indexPathForSelectedRow?.section,
+                let row = tableView.indexPathForSelectedRow?.row {
+                
+                    destination.selectedCountry = continents[section].countries[row]
+            }
+        }
     }
     
     // MARK: - Helper

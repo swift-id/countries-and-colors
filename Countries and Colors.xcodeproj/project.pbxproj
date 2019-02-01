@@ -14,6 +14,7 @@
 		4A7EB06E2203E2B1002DF7D9 /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EB06D2203E2B1002DF7D9 /* CountriesTableViewController.swift */; };
 		4A9EA7032203E3DD00E1C11C /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9EA7022203E3DD00E1C11C /* Continent.swift */; };
 		4A9EA7052203E40E00E1C11C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9EA7042203E40E00E1C11C /* Country.swift */; };
+		4A9EA7072203EC6A00E1C11C /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9EA7062203EC6A00E1C11C /* CountryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4A7EB06D2203E2B1002DF7D9 /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 		4A9EA7022203E3DD00E1C11C /* Continent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
 		4A9EA7042203E40E00E1C11C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		4A9EA7062203EC6A00E1C11C /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				4A7EB06D2203E2B1002DF7D9 /* CountriesTableViewController.swift */,
+				4A9EA7062203EC6A00E1C11C /* CountryDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				4A9EA7052203E40E00E1C11C /* Country.swift in Sources */,
 				4A7EB06E2203E2B1002DF7D9 /* CountriesTableViewController.swift in Sources */,
 				4A7EB0592203E258002DF7D9 /* AppDelegate.swift in Sources */,
+				4A9EA7072203EC6A00E1C11C /* CountryDetailViewController.swift in Sources */,
 				4A9EA7032203E3DD00E1C11C /* Continent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

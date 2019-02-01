@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--COUNTRY-->
+        <!--Country-->
         <scene sceneID="UGx-tN-FVP">
             <objects>
                 <tableViewController id="JSO-Gk-g2Z" customClass="CountriesTableViewController" customModule="Countries_and_Colors" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,6 +26,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="J7B-D7-NPW" kind="show" identifier="gotoCountryDetail" id="53G-NB-Axq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,22 +36,23 @@
                             <outlet property="delegate" destination="JSO-Gk-g2Z" id="1bD-zT-u4K"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="COUNTRY" id="x77-Bk-0u1"/>
+                    <navigationItem key="navigationItem" title="Country" id="x77-Bk-0u1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9d-Dv-Shn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="45"/>
+            <point key="canvasLocation" x="390" y="44"/>
         </scene>
-        <!--View Controller-->
+        <!--Country Name-->
         <scene sceneID="Vkl-zJ-WnY">
             <objects>
-                <viewController id="J7B-D7-NPW" sceneMemberID="viewController">
+                <viewController id="J7B-D7-NPW" customClass="CountryDetailViewController" customModule="Countries_and_Colors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RKf-Nx-plP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W59-CB-Z2Q"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Country Name" id="FqA-Vb-BqO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOc-gc-3uS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
